@@ -41,7 +41,7 @@
                 const errorMsg = errorMessage[i];
                 const errorIcn = errorIcon[i];
                 if (emptyInput(input.value)) {
-                    label.style.border = "1px solid red";
+                    label.style.border = "1px solid var(--clr-primary-red)";
                     label.style.marginBottom = "2rem";
                     errorMsg.classList.remove("hidden");
                     errorIcn.classList.remove("hidden");
@@ -62,6 +62,7 @@
                     label.style.marginBottom = "2rem";
                     emailErrorMessage.classList.remove("hidden");
                     emailErrorIcon.classList.remove("hidden");
+                    label.style.border = "1px solid var(--clr-primary-red)";
                 } else {
                     emailErrorMessage.classList.add("hidden");
                     emailErrorIcon.classList.add("hidden");
