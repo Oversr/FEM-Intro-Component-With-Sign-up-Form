@@ -1,0 +1,231 @@
+/* Custom Styling */
+:root {
+    --clr-primary-red: #ff7a7a;
+    --clr-primary-green: #38cc8c;
+
+    --clr-accent-purple: #6055a5;
+
+    --clr-neutral-dark-blue: #3e3c49;
+    --clr-neutral-gray-blue: #b9b6d3;
+
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+/* Reset Styling */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography Styling */
+h1,
+.main-left p,
+.promo span {
+    color: #fff;
+}
+
+.promo p,
+.terms {
+    color: var(--clr-neutral-gray-blue);
+}
+
+input {
+    color: var(--clr-neutral-dark-blue);
+}
+
+.error-message {
+    color: var(--clr-primary-red);
+}
+
+.claim-btn {
+    color: #fff;
+}
+
+.card span {
+    color: var(--clr-primary-red);
+}
+
+/* General Styling */
+body {
+    min-height: 100vh;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--clr-primary-red);
+    font-family: var(--ff-primary);
+    margin: 6rem 1.5rem;
+}
+
+    /* main-left Styling */
+    .main-left {
+        text-align: center;
+    }
+    
+    .main-left .container {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    /* main-right Styling */
+    .promo {
+        background-color: var(--clr-accent-purple);
+        border-radius: 8px;
+        padding: .8rem;
+        text-align: center;
+        box-shadow: 0 7px 0 #e77168;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 7px 0 #e77168;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--clr-neutral-gray-blue);
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    input {
+        padding: .7rem .7rem .7rem 1rem;
+        width: 100%;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .error-icon {
+        position: absolute;
+        right: 20px;
+    }
+
+    .error-message {
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+        font-size: .7rem;
+        font-weight: 500;
+    }
+
+    .claim-btn {
+        background-color: var(--clr-primary-green);
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        box-shadow: 0 3px 1px #2c9769;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .claim-btn:hover {
+        background-color: #82e3b6;
+        box-shadow: 0 3px 1px #75cea3;
+    }
+
+    .terms {
+        font-size: .7rem;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .terms span {
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .terms span:hover {
+        color: #ffc0c0;
+    }
+
+    /* Attribution Styling */
+    .attribution {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: .7rem;
+    }
+
+    .attribution p {
+        color: var(--clr-neutral-dark-blue);
+    }
+
+    .attribution a {
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom .2s ease-in-out;
+    }
+
+    .attribution a:hover {
+        border-bottom: 1px solid #fff;
+    }
+
+/* Responsive Styling */
+@media (min-width: 48rem) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* main-left Styling */
+        .main-left {
+            text-align: left;
+        }
+
+        .main-left .container {
+            max-width: 32rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        /* main-right Styling */
+        .card {
+            padding: 2rem
+        }
+
+        input {
+            padding: 1rem 1rem 1rem 1.5rem;
+        }
+    }
+
+@media (min-width: 64rem) {
+    body {
+        margin: 6rem 10rem;
+    }
+}
+
+/* JavaScript Styling */
+.clicked {
+    border: 2px solid var(--clr-accent-purple);
+}
